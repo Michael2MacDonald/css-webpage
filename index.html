@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <head>
-
-    <title>Basic Webpage</title>
+    <title>CSS Webpage</title>
     <meta name="author" content="Michael MacDonald">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header center">
-        <h1 class="title">Michael MacDonald</h1>
+        <h1 class="title">HTML And CSS</h1>
         <hr class="divider">
     </div>
     
     <div class="body">
 
         <div class="section">
-            <div class="header center"><h1>About Me</h1></div>
+            <div class="center"><h1>About Me</h1></div>
 
             <div class="flex-box">
-                <a><img src="sheldon.jpg" height="225px" style="margin-top: 20px;" class="left"></a>
+                <a><img src="html.png" height="225px" style="margin-top: 20px;" class="left"></a>
                 <div class="content">
-                    <h2 class="header">HTML</h2>
-                    <p>HTML is a markup language that web browsers use to</p>
+                    <h2>HTML</h2>
+                    <p>HTML is a markup language that web browsers use to create content and text on your computer. It is one of the oldest parts of the internet. HTML by itself is not very pretty. It depends on other things like CSS to style it.</p>
+                    <h3 class="header">Common HTML Elements</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Tag</th>
+                            <th>Use</th>
+                        </tr>
+                        <tr>
+                            <td>Link</td>
+                            <td>&lt;a&gt;</td>
+                            <td>Used To Make Links</td>
+                        </tr>
+                        <tr>
+                            <td>Div</td>
+                            <td>&lt;div&gt;</td>
+                            <td>Used To Group Code</td>
+                        </tr>
+                    </table>
                     <hr class="divider">
                 </div>
             </div>
             <div class="flex-box">
                 <div class="content right">
-                    <h2 class="header">stuff</h2>
-                    <p>stuff</p>
+                    <h2>CSS</h2>
+                    <p>CSS is used by web brousers to style HTML. It was developed after HTML but was an amazing addition. CSS can be added to HTML in many ways.</p>
+                    <p>You can create a file with CSS and include it like this:</p>
+                    <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                    <p>You can add CSS streight to an element like this:</p>
+                    <code>&lt;div styles="background-color: #f4f4f4;"&gt;&lt;/div&gt;</code>
+                    <p>You can add CSS in a HTML file like this:</p>
+                    <code>
+                        &lt;styles&gt;
+                        code {
+                            background-color:#312f2f;
+                            color: #cccccc;
+                            padding: 0 3px;
+                            border-radius: 4px;
+                        }
+                        &lt;/styles&gt;
+                    </code>
                     <hr class="divider">
                 </div>
-                <a><img src="rpi2b.jpg" height="225px" style="margin-top: 20px;" class="right"></a>
-            </div>
-            <div class="flex-box">
-                <a href="https://github.com/Michael2MacDonald/Arduino-Desktop-Project"><img src="arduinodesktopproject.png" height="225px" style="margin-top: 20px;" class="left"></a>
-                <div class="content left">
-                    <h2 class="header">stuff</h2>
-                    <p>sdhaskbdl</p>
-                    <hr class="divider">
-                </div>
-            </div>
-            <div class="flex-box">
-                <div class="content right">
-                    <h2 class="header">yoyoyo</h2>
-                    <p>why</p>
-                    <hr class="divider">
-                </div>
-                <a href="https://store.weatherstationproject.com/"><img src="Front-Black-Square.jpg" height="225px" style="margin-top: 20px;" class="right"></a>
+                <a><img src="css.png" height="225px" style="margin-top: 20px;" class="right"></a>
             </div>
         </div>
 

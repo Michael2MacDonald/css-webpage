@@ -17,7 +17,13 @@ img {
 table, th, td {
     border: 1px solid #ff7e67;
 }
-.header {  
+code {
+    background-color:#312f2f;
+    color: #cccccc;
+    padding: 0 3px;
+    border-radius: 4px;
+}
+h1, h2, h3 {  
     /* color: #303030; */
     color: #006a71;
 }
@@ -38,14 +44,14 @@ table, th, td {
     margin-right: auto;
     text-align: left;
 }
-img.left {
+.section img.left {
     margin-right: 10px;
 }
 .right {
     margin-left: auto;
     text-align: right;
 }
-img.right {
+.section img.right {
     margin-left: 10px;
 }
 .center {
