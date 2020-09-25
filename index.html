@@ -13,19 +13,19 @@
     <div class="body">
 
         <div class="section">
-            <div class="center"><h1>About Me</h1></div>
 
             <div class="flex-box">
                 <a><img src="html.png" height="225px" style="margin-top: 20px;" class="left"></a>
                 <div class="content">
-                    <h2>HTML</h2>
+                    <h2><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h2>
                     <p>HTML is a markup language that web browsers use to create content and text on your computer. It is one of the oldest parts of the internet. HTML by itself is not very pretty. It depends on other things like CSS to style it.</p>
-                    <h3 class="header">Common HTML Elements</h2>
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <th>Tag</th>
-                            <th>Use</th>
+                    <h3 id="table-header">Common HTML Elements:</h2>
+                    <button id="button" onclick="show()">Show Table</button>
+                    <table id="table" style="display: none;">
+                        <tr id="header-row">
+                            <th class="header-row">Name</th>
+                            <th class="header-row">Tag</th>
+                            <th class="header-row">Use</th>
                         </tr>
                         <tr>
                             <td>Link</td>
@@ -35,15 +35,26 @@
                         <tr>
                             <td>Div</td>
                             <td>&lt;div&gt;</td>
-                            <td>Used To Group Code</td>
+                            <td>Used To Group Code. A div starts on a new line and takes up the whole width of the page by default</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>&lt;button&gt;</td>
+                            <td>Used To Make A Button</td>
+                        </tr>
+                        <tr>
+                            <td>Span</td>
+                            <td>&lt;div&gt;</td>
+                            <td>Used To Group Code but unlike the div it does not create a new line and can be used inline</td>
                         </tr>
                     </table>
                     <hr class="divider">
                 </div>
             </div>
+
             <div class="flex-box">
                 <div class="content right">
-                    <h2>CSS</h2>
+                    <h2><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></h2>
                     <p>CSS is used by web brousers to style HTML. It was developed after HTML but was an amazing addition. CSS can be added to HTML in many ways.</p>
                     <p>You can create a file with CSS and include it like this:</p>
                     <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
@@ -64,68 +75,16 @@
                 </div>
                 <a><img src="css.png" height="225px" style="margin-top: 20px;" class="right"></a>
             </div>
-        </div>
 
-        <div class="section">
-            <div class="flex-box">
-                <div class="content left">
-                    <h2 class="header">Links To The Project:</h2>
-                    <ul>
-                        <li><a href="https://weatherstationproject.com/">weatherstationproject.com</a></li>
-                        <li><a href="https://store.weatherstationproject.com/">Store</a></li>
-                        <li><a href="https://docs.weatherstationproject.com/">Documentation</a></li>
-                        <li><a href="https://github.com/WeatherStationProject">Github</a></li>
-                        <li><a>Social Media:</a>
-                            <ol>
-                              <li><a href="https://discord.gg/94b3ngb">Discord</a></li>
-                              <li><a href="https://instagram.com/weatherstationproject?igshid=108gatihw34az">Instagram</a></li>
-                              <li><a href=" http://twitter.com/weatherstatpro">@weatherstatpro</a></li>
-                              <li><a href="https://linktr.ee/weatherstationproject">linktr.ee</a></li>
-                            </ol>
-                          </li>
-                    </ul>
-                    <hr class="divider">
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="section">
-            <div class="content center">
-                <h2 class="header center">Products:</h2>
-                <table>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Price</th>
-                        <th>Discription</th>
-                        <th>Image</th>
-                      </tr>
-                      <tr>
-                        <td>Barebones Kit</td>
-                        <td>N/A (Not yet for sale)</td>
-                        <td>Simple kit that can measure temp, humidity, and presure</td>
-                        <td>Image 1</td>
-                      </tr>
-                      <tr>
-                        <td>Full Kit (PCB V1.2)</td>
-                        <td>$28.49</td>
-                        <td>N/A</td>
-                        <td>Image 2</td>
-                      </tr>
-                </table>
-                <div class="flex-box center">
-                    <div>
-                        <h3 class="header center"><strong>Image 1</strong></h3>
-                        <img src="Front.png" height="225px" style="margin: 5px;">
-                    </div>
-                    <div>
-                        <h3 class="header center"><strong>Image 2</strong></h3>
-                        <img src="Back-Single-Black-Edited.jpg" height="225px" style="margin: 5px;">
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
 
 </body>
+
+<script>
+function show() {
+    document.getElementById("table").style.display="block";
+    document.getElementById("button").style.display="none";
+}
+</script>
